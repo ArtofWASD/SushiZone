@@ -1,0 +1,255 @@
+@import config
+@import "blocks/**/*"
+
+// CUSTOM USER STYLES & IMPORTS
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+  font-weight: bold
+  margin-bottom: 0
+
+.bg-dark
+  background-color: #3B3B3B
+
+.bg-lgrey
+  background-color: #DCDCDC
+
+.text-grey
+  color: #FDFDFD
+
+.text-dark
+  color: #767676
+
+.text-yellow
+  color: #FFBC0D
+
+.text-banner
+  color: #8A1515
+
+.fs11
+  font-size: 11px
+
+.fs12
+  font-size: 12px
+
+.fs14
+  font-size: 14px
+
+.fs16
+  font-size: 16px
+
+.fs18
+  font-size: 18px
+
+.fs20
+  font-size: 20px
+
+.fs24
+  font-size: 24px
+
+.fs36
+  font-size: 36px
+
+.br1
+  border: none
+  border-radius: 10px
+
+.br2
+  border: none
+  border-radius: 20px
+
+.br10
+  border: none
+  border-radius: 100px
+
+.btn-orange
+  background-color: #FE6E02
+  color: white
+
+  &:hover
+    transition: color .1s ease
+    background-color: #e46200
+    color: white
+
+
+body
+  ul
+    margin: 0
+    padding: 0
+
+  a
+    transition: color .1s ease
+    text-decoration: none
+
+    &:hover
+      text-decoration: none
+      color: #FDFDFD
+
+  p
+    margin-bottom: 0
+
+//Главный баннер
+.left-side
+  .main-banner
+    background-repeat: no-repeat
+    background-position: right
+    background-image: url("/images/dist/shrimp-bg.png")
+
+//Боковое меню
+.right-menu
+  box-shadow: 0 0 10px rgba(138, 21, 21, 0.4)
+
+  .menu-img
+    height: 50px
+// Товарыне позиции
+.card
+  padding: 0
+
+  .card-img-top
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position: relative
+    height: 170px
+    background-image: url("/images/dist/sushi.png")
+
+  .card-img-top-hit
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position: relative
+    height: 170px
+    background-image: url("/images/dist/sushi.png")
+
+    &::before
+      z-index: 1
+      content: ''
+      position: absolute
+      width: 97px
+      height: 44px
+      top: -10%
+      right: 0
+      background-image: url("/images/hit-icon.svg")
+
+  .card-img-top-spicy
+    background-position: center
+    background-size: cover
+    position: relative
+    height: 170px
+    background-image: url("/images/dist/sushi.png")
+
+    &::before
+      z-index: 1
+      content: ''
+      position: absolute
+      width: 60px
+      height: 60px
+      top: -16%
+      right: -5%
+      background-image: url("/images/dist/spicy-icon.png")
+
+  .card-img-top-veg
+    background-position: center
+    background-size: cover
+    position: relative
+    height: 170px
+    background-image: url("/images/dist/sushi.png")
+
+    &::before
+      z-index: 1
+      content: ''
+      position: absolute
+      width: 60px
+      height: 60px
+      top: -16%
+      right: -5%
+      background-image: url("/images/dist/veg-icon.png")
+
+.modal
+  .modal-img
+    background-position: center
+    background-size: cover
+    position: relative
+    background-image: url("/images/dist/sushi.png")
+    width: 270px
+    height: 177px
+
+    &::before
+      z-index: 1
+      content: ''
+      position: absolute
+      width: 97px
+      height: 44px
+      top: -10%
+      right: 0
+      background-image: url("/images/hit-icon.svg")
+
+  .same-goods
+    .goods-img
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+      height: 100px
+      width: 170px
+      background-image: url("/images/dist/sushi.png")
+
+// медиа запросы
+
+//@media (max-width: 1199.98px)
+
+//@media (max-width: 991.98px)
+
+//@media (max-width: 767.98px)
+
+@media (max-width: 575.98px)
+  header
+    .header-phone
+      a
+        font-size: 13px
+
+      img
+        width: 25px
+
+  .left-side
+    .main-banner
+      .fs36
+        font-size: 18px
+      .fs24
+        font-size: 14px
+      .fs14
+        font-size: 10px
+
+  .card
+    .card-img-top-spicy
+      &::before
+        right: 0!important
+
+    .card-img-top-veg
+      &::before
+        right: 0!important
+
+  footer
+    .footer-policity
+      a
+        font-size: 12px
+
+  .modal
+    .goods-img
+      width: 150px!important
+
+@media (max-width: 359.98px)
+  header
+    .header-phone
+      a
+        font-size: 10px
+
+      img
+        width: 20px
+  .left-side
+    .main-banner
+      background-image: none
+      .fs36
+        font-size: 24px
+      .fs24
+        font-size: 20px
+      .fs14
+        font-size: 14px
+

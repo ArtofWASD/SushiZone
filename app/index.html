@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="Sushi">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<div class="page">
+    <!-- Шапка. Начало. -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <!-- Логотип -->
+                <div class="header img-box py-3 col-3">
+                    <img src="images/dist/logo.png" alt="" class="logo img-fluid">
+                </div>
+                <!-- Ссылки(ПК) -->
+                <ul class="links list-unstyled d-none d-lg-flex align-items-center justify-content-end d-none d-lg-flex col-6">
+                    <li><a href="#" class="fs18 text-grey px-3">Акции</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Доставка</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">О компании</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Блог</a></li>
+                </ul>
+                <!-- Телефон -->
+                <div class="header-phone d-flex flex-wrap align-items-center col-6 col-lg-3 justify-content-center justify-content-lg-end">
+                    <a href="tel:+7 (831) 4-100-900" class="text-white fs14 font-weight-bold">
+                        <img src="images/header-icon.svg" alt="" class="img-fluid mr-2">+7 (831) 4-100-900</a>
+                </div>
+                <div class="mobile col-auto col-md-3">
+                    <a href="#my-menu" class="d-flex d-lg-none justify-content-end">
+                        <img src="images/burger-icon.svg" alt="" style="width: 30px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Шапка. Конец. -->
+    <!--Каталог. Начало.-->
+    <section class="content">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="left-side col-12 col-lg-9">
+                    <!-- Баннер на главной -->
+                    <div class="main-banner w-100 br2 d-flex bg-lgrey justify-content-between mt-5">
+                        <div class="pl-3">
+                            <p class="text-banner fs36 font-weight-bold py-3">Больше = дешевле!</p>
+                            <p class="text-banner fs24 font-weight-bold pt-5">Скидка 30% </p>
+                            <p class="text-banner fs14 pb-3">при покупке от 500 руб</p>
+                        </div>
+                    </div>
+                    <!-- Категории под баннером -->
+                    <ul class="cat-menu list-unstyled d-none d-md-flex justify-content-between py-5">
+                        <li><a href="" class="fs-18 text-dark">Популярное</a></li>
+                        <li><a href="" class="fs-18 text-dark">Наборы</a></li>
+                        <li><a href="" class="fs-18 text-dark">Роллы</a></li>
+                        <li><a href="" class="fs-18 text-dark">Горячие роллы</a></li>
+                        <li><a href="" class="fs-18 text-dark">Лапша Wok</a></li>
+                        <li><a href="" class="fs-18 text-dark">Салаты</a></li>
+                    </ul>
+                    <!--Популярное начало-->
+                    <div class="popular">
+                        <div class="pop-title">
+                            <p class="fs24 font-weight-bold py-4 py-md-0 pb-md-4">Популярное</p>
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <!--Товарная позиция 1-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-hit br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 2-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-hit br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 3-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-hit br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 4-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-hit br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 5-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-hit br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!--Популярное конец-->
+                    <!--Наборы начало-->
+                    <div class="set">
+                        <div class="set-title">
+                            <p class="fs24 font-weight-bold pb-5">Наборы</p>
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <!--Товарная позиция 1-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-spicy br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 2-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 3-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-veg br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 4-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 5-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top-spicy br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 6-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!--Наборы конец-->
+                    <!--Роллы начало-->
+                    <div class="roll">
+                        <div class="roll-title">
+                            <p class="fs24 font-weight-bold pb-5">Роллы</p>
+                        </div>
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <!--Товарная позиция 1-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 2-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 3-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 4-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 5-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Товарная позиция 6-->
+                            <article class="card col-12 col-md-4 br2 p-2">
+                                <div class="card-img-top br2 stretched-link img-fluid" data-toggle="modal"
+                                     data-target="#exampleModal"></div>
+                                <div class="card-body px-0">
+                                    <p class="fs20 font-weight-bold">Филадельфия большая</p>
+                                    <p class="fs18 pt-2">Лосось, сливочный сыр,<br> рис, нори</p>
+                                    <div class="card-price d-flex align-items-center justify-content-end">
+                                        <p class="fs20 text-yellow font-weight-bold px-2">419 P</p>
+                                        <button class="btn-orange cart-button py-1 br10"><img
+                                                src="./images/cart-icon.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!--Роллы конец-->
+                </div>
+                <!--Боковая корзина-->
+                <div class="right-menu col-3 vh-100 br2 my-5 d-none d-lg-flex flex-column justify-content-between position-sticky fixed-top">
+                    <div class="upper-block">
+                        <p class="fs18 pt-4">Доставка и оплата</p>
+                        <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                        <div class="menu-adress d-flex">
+                            <p class="fs11 font-weight-bold mr-2">Адрес:</p>
+                            <p class="fs11">Ленинский проспект, 51, кв 306</p>
+                        </div>
+                        <!--Моя Корзина-->
+                        <p class="fs18 pt-4">Моя корзина</p>
+                        <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                        <!--Позииции в меню заказа-->
+                        <div class="menu-pos d-flex align-items-center">
+                            <img src="images/cross-icon.svg" alt="">
+                            <img src="images/dist/sushi.png" alt="" class="menu-img img-thumbnail br2">
+                            <div class="px-2">
+                                <p class="pos-title fs11 font-weight-bold">Филадельфия большая</p>
+                                <p class="pos-price fs11 pt-2 text-yellow">419 P</p>
+                            </div>
+                        </div>
+                        <!--Позииции в меню заказа-->
+                        <div class="menu-pos d-flex align-items-center">
+                            <img src="images/cross-icon.svg" alt="">
+                            <img src="images/dist/sushi.png" alt="" class="menu-img img-thumbnail br2">
+                            <div class="px-2">
+                                <p class="pos-title fs11 font-weight-bold">Филадельфия большая</p>
+                                <p class="pos-price fs11 pt-2 text-yellow">419 P</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lower-block">
+                        <!--Доставка и адрес-->
+
+                        <!--Подвал меню-->
+                        <div class="free-delivery d-flex align-items-center py-2 mt-4">
+                            <img src="images/free%20-icon.svg" alt="">
+                            <p class="pl-3 fs12">от 1000 руб бесплатно</p>
+                        </div>
+                        <div class="delivery-time d-flex align-items-center py-2">
+                            <img src="images/delivery-icon.svg" alt="">
+                            <p class="pl-3 fs12">доставка от 30 минут</p>
+                        </div>
+                        <button class="btn btn-orange fs16 py-3 br10 w-100 my-2">
+                            <img src="images/maps-icon.svg" alt="" style="height: 22px"> Укажите адрес доставки
+                        </button>
+                        <p class="fs12 py-2 ">Заказ приедет через</p>
+                        <p class="fs24 font-weight-bold py-2">35-45 мин</p>
+                        <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                        <div class="persone-number d-flex justify-content-between align-items-center">
+                            <div>
+                                <p class="fs11 font-weight-bold">Количество приборов</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fs14 text-yellow px-2">-</p>
+                                <p class="fs14">2</p>
+                                <p class="fs14 text-yellow px-2">+</p>
+                            </div>
+                        </div>
+                        <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                        <div class="summ d-flex justify-content-end py-2">
+                            <p class="fs11 font-weight-bold px-2">Итого:</p>
+                            <p class="fs11 text-yellow">838 Р</p>
+                        </div>
+                        <div class="d-flex justify-content-end py-2">
+                            <p class="fs11">Бесплатная доставка от 1000 Р</p>
+                        </div>
+                        <button class="btn btn-orange py-4 w-100 fs18 br2 my-2">Оформить заказ</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Каталог. Конец.-->
+    <!--Подвал. Начало.-->
+    <footer class="bg-dark">
+        <div class="container">
+            <!--Подвал Логотип и меню-->
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="footer img-box d-flex justify-content-center py-3 col-12 col-lg-3">
+                    <img src="images/dist/logo.png" alt="" class="logo img-fluid">
+                </div>
+                <ul class="links list-unstyled d-none d-lg-flex col-8 justify-content-start">
+                    <li><a href="#" class="fs18 text-grey px-3">Акции</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Доставка</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">О компании</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Блог</a></li>
+                </ul>
+            </div>
+            <!--Подвал Рассылка-->
+            <div class="row d-inline d-md-flex justify-content-center justify-content-md-between align-items-center py-3">
+                <p class="text-grey text-center text-md-left col-12 col-md-3 py-3">
+                    Подпишись на новости,
+                    чтобы вовремя узнать про
+                    скидки и акции!
+                </p>
+                <input type="text" class="py-3 br10 w-100 col-12 col-md-5 ml-lg-5 my-3 my-md-0" placeholder="Ваш e-mail">
+                <button class="btn btn-orange py-3 my-3 my-md-0 br2 col-12 col-md-3">Подписаться на новости</button>
+            </div>
+            <!--Подвал контакты-->
+            <div class="row d-inline d-md-flex justify-content-between align-items-center py-0 py-md-3">
+                <p class="text-white text-center font-weight-bold py-3 col-12 col-md-3">
+                    +7 (831) 4-100-900 <br> example@mail.ru
+                </p>
+                <p class="text-white text-center font-weight-bold py-3 d-flex justify-content-center col-12 col-md-6">
+                    Приём заказов ежедневно с 9:00 до 21:00
+                </p>
+                <div class="footer-social py-3 col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                    <a href=""><img src="images/vk-icon.svg" alt="" class="mr-4"></a>
+                    <a href=""><img src="images/inst-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container">
+                <div class="footer-policity row d-flex justify-content-center justify-content-md-between align-items-center">
+                    <a href="" class="text-dark fs18 p-2 py-lg-4">2020/Все права защищены</a>
+                    <a href="" class="text-dark fs18 p-2 py-lg-4">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Подвал. Конец.-->
+</div>
+<!--Модальное окно. Начало-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content br2">
+            <div class="modal-body">
+                <div class="container">
+                    <div class="d-inline d-md-flex justify-content-center align-items-center py-4">
+                        <div class="modal-img img-fluid br2 col-12 col-lg-5"></div>
+                        <div class="pl-lg-5 col-12 col-lg-7 py-2">
+                            <p class="fs20 font-weight-bold text-left text-nowrap">Филадельфия большая</p>
+                            <p class="fs18 py-2">Лосось, сливочный сыр,<br class="d-none d-lg-flex"> рис, нори</p>
+                            <p class="fs20 text-yellow font-weight-bold py-2">419 P</p>
+                            <div class="card-price d-flex align-items-center justify-content-start">
+                                <div class="d-flex align-items-center pr-4">
+                                    <p class="fs18 text-yellow px-2 font-weight-bold">-</p>
+                                    <p class="fs18">1</p>
+                                    <p class="fs18 text-yellow px-2 font-weight-bold">+</p>
+                                </div>
+                                <button class="btn-orange cart-button br1 w-50 py-2">
+                                    <img src="./images/cart-icon.svg" alt=""> В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="same-pos">
+                        <div class="same-title">
+                            <p class="fs24 font-weight-bold text-center text-lg-left py-3">Похожие товары</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center py-4">
+                        <div class="same-goods">
+                            <div class="goods-img br2">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start py-2">
+                                <button class="btn-orange cart-button py-1 px-3 br10"><img src="./images/cart-icon.svg"
+                                                                                           alt=""></button>
+                                <p class="fs20 text-yellow font-weight-bold px-3">419 P</p>
+                            </div>
+                        </div>
+                        <div class="same-goods">
+                            <div class="goods-img br2">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start py-2">
+                                <button class="btn-orange cart-button py-1 px-3 br10"><img src="./images/cart-icon.svg"
+                                                                                           alt=""></button>
+                                <p class="fs20 text-yellow font-weight-bold px-3">419 P</p>
+                            </div>
+                        </div>
+                        <div class="same-goods">
+                            <div class="goods-img br2">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start py-2">
+                                <button class="btn-orange cart-button py-1 px-3 br10"><img src="./images/cart-icon.svg"
+                                                                                           alt=""></button>
+                                <p class="fs20 text-yellow font-weight-bold px-3">419 P</p>
+                            </div>
+                        </div>
+                        <div class="same-goods">
+                            <div class="goods-img br2">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start py-2">
+                                <button class="btn-orange cart-button py-1 px-3 br10"><img src="./images/cart-icon.svg"
+                                                                                           alt=""></button>
+                                <p class="fs20 text-yellow font-weight-bold px-3">419 P</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Модальное окно. Конец-->
+<!--Мобильная навигация. Начало-->
+<nav id="my-menu">
+    <ul>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">О компани</a></li>
+        <li><a href="#">Блог</a></li>
+    </ul>
+</nav>
+<!--Мобильная навигация. Конец-->
+<script src="js/app.min.js"></script>
+</body>
+</html>
+
