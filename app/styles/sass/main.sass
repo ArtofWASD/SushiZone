@@ -56,6 +56,10 @@
   border: none
   border-radius: 20px
 
+.br10v
+  border: 1px solid #DCDCDC
+  border-radius: 100px
+
 .br10
   border: none
   border-radius: 100px
@@ -96,7 +100,6 @@ body
 //Боковое меню
 .right-menu
   box-shadow: 0 0 10px rgba(138, 21, 21, 0.4)
-
   .menu-img
     height: 50px
 // Товарыне позиции
@@ -106,7 +109,7 @@ body
   .card-img-top
     background-repeat: no-repeat
     background-position: center
-    background-size: cover
+    background-size: contain
     position: relative
     height: 170px
     background-image: url("/images/dist/sushi.png")
@@ -114,7 +117,7 @@ body
   .card-img-top-hit
     background-repeat: no-repeat
     background-position: center
-    background-size: cover
+    background-size: contain
     position: relative
     height: 170px
     background-image: url("/images/dist/sushi.png")
@@ -126,12 +129,13 @@ body
       width: 97px
       height: 44px
       top: -10%
-      right: 0
+      right: 1%
       background-image: url("/images/hit-icon.svg")
 
   .card-img-top-spicy
     background-position: center
-    background-size: cover
+    background-repeat: no-repeat
+    background-size: contain
     position: relative
     height: 170px
     background-image: url("/images/dist/sushi.png")
@@ -148,7 +152,8 @@ body
 
   .card-img-top-veg
     background-position: center
-    background-size: cover
+    background-repeat: no-repeat
+    background-size: contain
     position: relative
     height: 170px
     background-image: url("/images/dist/sushi.png")
@@ -192,8 +197,18 @@ body
       width: 100%
       background-image: url("/images/dist/sushi.png")
 
-// медиа запросы
+//Оформление заказа
+.cart-offer
+  .cart-left-side
+     box-shadow: 0 0 10px rgba(138, 21, 21, 0.4)
+  .cart-right-side
+    .box
+      box-shadow: 0 0 10px rgba(138, 21, 21, 0.4)
+    .menu-img
+      height: 50px
 
+
+// медиа запросы
 //@media (max-width: 1199.98px)
 
 @media (max-width: 991.98px)

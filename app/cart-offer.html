@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="Sushi">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<div class="page">
+    <!-- Шапка. Начало. -->
+    <header>
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between py-4">
+                <p class="fs-24 font-weight-bold">Оформление заказа</p>
+                <p class="fs-18 "><a href="#" class="text-dark">Вернуться на главную</a></p>
+            </div>
+            <hr class="py-4" style="border-color: rgba(254, 110, 2, 0.3);">
+        </div>
+    </header>
+    <!-- Шапка. Конец. -->
+    <!-- Оформление заказа. Начало. -->
+    <section class="cart-offer py-4">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="cart-left-side br2 col-8">
+                    <div class="d-flex align-items-center justify-content-between py-4">
+                        <div class="col-6">
+                            <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="+7 (123) 455-67-89">
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-right-side col-4">
+                    <div class="box br2">
+                        <div class="upper-block px-3">
+                            <p class="fs18 pt-4">Доставка и оплата</p>
+                            <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                            <div class="menu-adress d-flex">
+                                <p class="fs11 font-weight-bold mr-2">Адрес:</p>
+                                <p class="fs11">Ленинский проспект, 51, кв 306</p>
+                            </div>
+                            <!--Моя Корзина-->
+                            <p class="fs18 pt-4">Моя корзина</p>
+                            <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                            <!--Позииции в меню заказа-->
+                            <div class="menu-pos d-flex align-items-center py-1">
+                                <img src="images/cross-icon.svg" alt="">
+                                <img src="images/dist/sushi.png" alt="" class="menu-img img-fluid br2">
+                                <div class="px-2">
+                                    <p class="pos-title fs11 font-weight-bold">Филадельфия большая</p>
+                                    <p class="pos-price fs11 pt-2 text-yellow">419 P</p>
+                                </div>
+                            </div>
+                            <!--Позииции в меню заказа-->
+                            <div class="menu-pos d-flex align-items-center py-1">
+                                <img src="images/cross-icon.svg" alt="">
+                                <img src="images/dist/sushi.png" alt="" class="menu-img img-fluid br2">
+                                <div class="px-2">
+                                    <p class="pos-title fs11 font-weight-bold">Филадельфия большая</p>
+                                    <p class="pos-price fs11 pt-2 text-yellow">419 P</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-block px-3">
+                            <!--Подвал меню-->
+                            <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                            <div class="persone-number d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p class="fs11 font-weight-bold">Количество приборов</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p class="fs14 text-yellow px-2">-</p>
+                                    <p class="fs14">2</p>
+                                    <p class="fs14 text-yellow px-2">+</p>
+                                </div>
+                            </div>
+                            <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
+                            <div class="summ d-flex justify-content-end py-2">
+                                <p class="fs11 font-weight-bold px-2">Итого:</p>
+                                <p class="fs11 text-yellow">838 Р</p>
+                            </div>
+                            <div class="d-flex justify-content-end py-2">
+                                <p class="fs11">Бесплатная доставка от 1000 Р</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <button class="btn btn-orange py-4 w-100 fs18 br2">Оформить заказ</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Оформление заказа. Конец. -->
+</div>
+</body>
+</html>
