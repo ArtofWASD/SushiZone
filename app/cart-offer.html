@@ -14,30 +14,67 @@
     <!-- Шапка. Начало. -->
     <header>
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between py-4">
-                <p class="fs-24 font-weight-bold">Оформление заказа</p>
-                <p class="fs-18 "><a href="#" class="text-dark">Вернуться на главную</a></p>
+            <div class="offer-title d-flex align-items-center justify-content-between py-4">
+                <p class="fs24 font-weight-bold">Оформление заказа</p>
+                <p class=""><a href="index.html" class="fs18 text-dark">Вернуться на главную</a></p>
             </div>
-            <hr class="py-4" style="border-color: rgba(254, 110, 2, 0.3);">
+            <hr class="py-0 py-lg-4" style="border-color: rgba(254, 110, 2, 0.3);">
         </div>
     </header>
     <!-- Шапка. Конец. -->
     <!-- Оформление заказа. Начало. -->
     <section class="cart-offer py-4">
         <div class="container">
-            <div class="row d-flex justify-content-between">
-                <div class="cart-left-side br2 col-8">
-                    <div class="d-flex align-items-center justify-content-between py-4">
-                        <div class="col-6">
-                            <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="Ваше имя">
+            <div class="row d-inline d-lg-flex justify-content-between">
+                <div class="cart-left-side br2 col-12 col-lg-8 py-4 py-lg-0">
+                    <div class="box bshadow br2">
+                        <div class="d-inline d-lg-flex align-items-center justify-content-between py-4">
+                            <div class="col-12 col-lg-6 py-3 py-lg-0">
+                                <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="Ваше имя">
+                            </div>
+                            <div class="col-12 col-lg-6 py-3 py-lg-0">
+                                <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="+7 (123) 455-67-89">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="+7 (123) 455-67-89">
+                        <div class="d-flex align-items-center justify-content-between py-3 py-md-0" >
+                            <p class="fs18 col-6">Адрес доставки</p>
+                            <p class="fs11 font-weight-bold text-orange col-6 text-right">Изменить</p>
+                        </div>
+                        <div class="br2 py-4">
+                            <div class="d-flex justify-content-center px-3">
+                                <img src="../images/dist/map.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center py-4">
+                            <div class="col-12">
+                                <input type="text" class="fs-18 py-4 br10v pl-4 w-100" placeholder="Комментарии к заказу">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center justify-content-md-start col-12 py-3 py-md-0 pt-md-4">
+                            <p class="fs18 text-center">Выберите способ оплаты</p>
+                        </div>
+                        <div class="d-inline d-md-flex justify-content-between align-items-baseline py-4 py-xl-3">
+                            <div class="d-flex align-items-center justify-content-center justify-content-md-start col-12 col-md-6 py-2 py-md-0">
+                                <input type="radio">
+                                <p class="fs18 px-2">Наличными курьеру</p>
+                            </div>
+                            <div class="d-inline-block align-items-center justify-content-end py-2 py-md-0 col-12 col-md-6">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <input type="radio">
+                                    <p class="fs18 px-2">Банковской картой</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center pb-3 pb-lg-0">
+                                    <img src="../images/dist/sber-logo.png" alt="" class="px-1 pl-lg-4">
+                                    <img src="../images/dist/master-card-logo.png" alt="" class="px-1">
+                                    <img src="../images/dist/mir_logo.png" alt="" class="px-1">
+                                    <img src="../images/dist/visa-logo.png" alt="" class="px-1">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cart-right-side col-4">
-                    <div class="box br2">
+                <div class="cart-right-side col-12 col-lg-4 py-4 py-lg-0">
+                    <div class="box bshadow br2">
                         <div class="upper-block px-3">
                             <p class="fs18 pt-4">Доставка и оплата</p>
                             <hr class="px-4" style="rgba(59, 59, 59, 0.4)">
@@ -90,8 +127,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pt-4">
-                        <button class="btn btn-orange py-4 w-100 fs18 br2">Оформить заказ</button>
+                    <div class="py-4">
+                        <a href="offer-success.html" class="btn btn-orange py-4 w-100 fs18 br2">Оформить заказ</a>
                     </div>
 
                 </div>
