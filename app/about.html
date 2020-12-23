@@ -1,10 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="Sushi">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+<div class="page">
+    <!-- Шапка. Начало. -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <!-- Логотип -->
+                <div class="header img-box py-3 col-3">
+                    <a href="index.html"><img src="images/dist/logo.png" alt="" class="logo img-fluid"></a>
+                </div>
+                <!-- Ссылки(ПК) -->
+                <ul class="links list-unstyled d-none d-lg-flex align-items-center justify-content-end d-none d-lg-flex col-6">
+                    <li><a href="shares.html" class="fs18 text-grey px-3">Акции</a></li>
+                    <li><a href="delivery.html" class="fs18 text-grey px-3">Доставка</a></li>
+                    <li><a href="about.html" class="fs18 text-grey px-3">О компании</a></li>
+                    <li><a href="blog.html" class="fs18 text-grey px-3">Блог</a></li>
+                </ul>
+                <!-- Телефон -->
+                <div class="header-phone d-flex flex-wrap align-items-center col-6 col-lg-3 justify-content-center justify-content-lg-end">
+                    <a href="tel:+7 (831) 4-100-900" class="text-white fs14 font-weight-bold">
+                        <img src="images/header-icon.svg" alt="" class="img-fluid mr-2">+7 (831) 4-100-900</a>
+                </div>
+                <div class="mobile col-auto col-md-3">
+                    <a href="#my-menu" class="d-flex d-lg-none justify-content-end">
+                        <img src="images/burger-icon.svg" alt="" style="width: 30px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Шапка. Конец. -->
+    <!--О компании. Начало.-->
+    <section class="about">
+        <div class="container">
+            <div class="about-title pt-4">
+                <p class="fs24 font-weight-bold text-center text-lg-left"> О компании</p>
+            </div>
+            <div class="about-text py-4">
+                <p class="fs-18 py-2"> Доставка вкусной еды Суши Zone - доставка суши, роллов, лапши в коробочках,
+                    салатов, десертов в городе Нижний Новгород</p>
+                <p class="fs-18 font-weight-bold py-2">Мы используем свежие и качественные ингредиенты и готовим с
+                    любовью.</p>
+                <p class="fs-18 py-2">Доставка еды – отличный современный сервис, который сберегает ваше время и
+                    помогает не тратить минуты, часы на ожидание в кафе, ресторане или утомительное приготовление пищи.
+                    Суши Zone , добившийся доверия, благодаря разнообразию вкусов своей кухни и качеству своих блюд!</p>
+                <p class="fs-18 py-2">В нашем меню вы найдете блюда на свой вкус, ведь у нас широкий ассортимент роллов, суши , лапши и т.д.:
+                    более 80 видов роллов, также большой выбор китайской лапши и других блюд. Доставка еды Суши Zone поможет
+                    вам оценить превосходный вкус в любом удобном для вас месте.</p>
+                <p class="fs-18 font-weight-bold py-2">Ваши прихоти – наше исполнение.</p>
+                <p class="fs-18 py-2">Над вашим заказом работают аттестованные повара-сушисты, на профессиональном оборудовании. Наш шеф-повар
+                    постоянно работает над улучшением и доработкой меню, добавляя новые оригинальные блюда. <br>
+                    Ваш заказ поступает на кухню немедленно после согласования с вами. <br>
+                    Мы не заставим вас долго ждать, заказ будет доставлен ровно в уговоренный час. <br>
+                    Мы ведём строгий контроль качества продуктов и процесса производства, контролируем операторов и
+                    курьеров.</p>
+                <p class="fs-18 font-weight-bold pt-2">РАДЫ СТАРАТЬСЯ ДЛЯ ВАС !</p>
+                <p class="fs-18 font-weight-bold pb-2">ВСЕГДА ВАШ СУШИ ZONE!</p>
+            </div>
+            <div class="owl-carousel owl-theme py-4">
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+                <div class="item"><img src="./images/dist/about_img.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!--О комании. Конец.-->
+    <!--Подвал. Начало.-->
+    <footer class="bg-dark">
+        <div class="container">
+            <!--Подвал Логотип и меню-->
+            <div class="row d-flex justify-content-between align-items-center py-4">
+                <div class="footer img-box d-flex justify-content-center col-12 col-lg-3">
+                    <img src="images/dist/logo.png" alt="" class="logo img-fluid pt-4 pt-md-0">
+                </div>
+                <ul class="links list-unstyled d-none d-lg-flex col-8 justify-content-start">
+                    <li><a href="#" class="fs18 text-grey px-3">Акции</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Доставка</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">О компании</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Блог</a></li>
+                </ul>
+            </div>
+            <!--Подвал Рассылка-->
+            <div class="row d-inline d-md-flex justify-content-center justify-content-md-between align-items-center">
+                <p class="text-grey text-center text-md-left col-12 col-md-3 py-3">
+                    Подпишись на новости,
+                    чтобы вовремя узнать про
+                    скидки и акции!
+                </p>
+                <input type="text" class="py-3 br10 w-100 col-12 col-md-5 ml-lg-5 my-3 my-md-0"
+                       placeholder="Ваш e-mail">
+                <button class="btn btn-orange py-3 my-3 my-md-0 br2 col-12 col-md-3">Подписаться на новости</button>
+            </div>
+            <!--Подвал контакты-->
+            <div class="row d-inline d-md-flex justify-content-between align-items-center py-0 py-md-3">
+                <p class="text-white text-center font-weight-bold py-3 col-12 col-md-3">
+                    +7 (831) 4-100-900 <br> example@mail.ru
+                </p>
+                <p class="text-white text-center font-weight-bold py-3 d-flex justify-content-center col-12 col-md-6">
+                    Приём заказов ежедневно с 9:00 до 21:00
+                </p>
+                <div class="footer-social py-3 col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                    <a href=""><img src="images/vk-icon.svg" alt="" class="mr-4"></a>
+                    <a href=""><img src="images/inst-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container">
+                <div class="footer-policity row d-flex justify-content-center justify-content-md-between align-items-center">
+                    <a href="" class="text-dark fs18 p-2 py-lg-4">2020/Все права защищены</a>
+                    <a href="" class="text-dark fs18 p-2 py-lg-4">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Подвал. Конец.-->
+</div>
+<!--Мобильная навигация. Начало-->
+<nav id="my-menu">
+    <ul>
+        <li><a href="shares.html">Акции</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="about.html">О компани</a></li>
+        <li><a href="blog.html">Блог</a></li>
+    </ul>
+</nav>
+<!--Мобильная навигация. Конец-->
+<script src="js/app.min.js"></script>
 </body>
 </html>
+

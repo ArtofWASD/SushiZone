@@ -1,10 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title><!--#echo var="title" --></title>
+    <meta name="description" content="Sushi">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dist/preview.jpg">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-
+<div class="page">
+    <!-- Шапка. Начало. -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-between">
+                <!-- Логотип -->
+                <div class="header img-box py-3 col-3">
+                    <a href="index.html"><img src="images/dist/logo.png" alt="" class="logo img-fluid"></a>
+                </div>
+                <!-- Ссылки(ПК) -->
+                <ul class="links list-unstyled d-none d-lg-flex align-items-center justify-content-end d-none d-lg-flex col-6">
+                    <li><a href="shares.html" class="fs18 text-grey px-3">Акции</a></li>
+                    <li><a href="delivery.html" class="fs18 text-grey px-3">Доставка</a></li>
+                    <li><a href="about.html" class="fs18 text-grey px-3">О компании</a></li>
+                    <li><a href="blog.html" class="fs18 text-grey px-3">Блог</a></li>
+                </ul>
+                <!-- Телефон -->
+                <div class="header-phone d-flex flex-wrap align-items-center col-6 col-lg-3 justify-content-center justify-content-lg-end">
+                    <a href="tel:+7 (831) 4-100-900" class="text-white fs14 font-weight-bold">
+                        <img src="images/header-icon.svg" alt="" class="img-fluid mr-2">+7 (831) 4-100-900</a>
+                </div>
+                <div class="mobile col-auto col-md-3">
+                    <a href="#my-menu" class="d-flex d-lg-none justify-content-end">
+                        <img src="images/burger-icon.svg" alt="" style="width: 30px"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Шапка. Конец. -->
+    <!--Доставка. Начало.-->
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-title pt-4">
+                <p class="fs24 font-weight-bold text-center text-lg-left">Доставка</p>
+            </div>
+            <div class="row delivery-tabs py-4">
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="images/sushi-icon.svg" alt="">
+                        <p class="fs18 text-orange font-weight-bold py-4 text-center">Выберите товары</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="images/mobile-icon.svg" alt="">
+                        <p class="fs18 text-orange font-weight-bold text-center py-4">Оформите заказ</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="images/operator-icon.svg" alt="">
+                        <p class="fs18 text-orange font-weight-bold text-center py-4">Подтвердите заказ</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <img src="images/deliverybig-icon.svg" alt="">
+                        <p class="fs18 text-orange font-weight-bold text-center py-4">Ожидайте заказ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery-advans py-4">
+                <p class="fs18 py-3">— Сделать заказ Вы можете <span class="fs18 font-weight-bold">на сайте или по телефону +7(831) 4-100-900 или +7-910-7-900-900</span></p>
+                <p class="fs18 py-3">— Стоимость доставки <span class="fs18 font-weight-bold">200 руб.</span></p>
+                <p class="fs18 py-3">— Доставка заказа осуществляется <span class="fs18 font-weight-bold">бесплатно при заказе от 1000 руб.</span></p>
+                <p class="fs18 py-3">— Заказ можно сделать <span class="fs18 font-weight-bold">ежедневно с 09:00 до 21:00</span></p>
+                <p class="fs18 py-3">— Точное время и район доставки спрашивайте у оператора</p>
+                <p class="fs18 py-3">— Каждый заказ готовится и собирается индивидуально, специально для Вас</p>
+                <p class="fs18 py-3">— Оплата заказа производится <span class="fs18 font-weight-bold">наличными или банковской картой</span></p>
+                <p class="fs18 py-3">— Следите за изменениями в меню</p>
+            </div>
+        </div>
+    </section>
+    <!--Доставка. Конец.-->
+    <!--Подвал. Начало.-->
+    <footer class="bg-dark">
+        <div class="container">
+            <!--Подвал Логотип и меню-->
+            <div class="row d-flex justify-content-between align-items-center py-4">
+                <div class="footer img-box d-flex justify-content-center col-12 col-lg-3">
+                    <img src="images/dist/logo.png" alt="" class="logo img-fluid pt-4 pt-md-0">
+                </div>
+                <ul class="links list-unstyled d-none d-lg-flex col-8 justify-content-start">
+                    <li><a href="#" class="fs18 text-grey px-3">Акции</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Доставка</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">О компании</a></li>
+                    <li><a href="#" class="fs18 text-grey px-3">Блог</a></li>
+                </ul>
+            </div>
+            <!--Подвал Рассылка-->
+            <div class="row d-inline d-md-flex justify-content-center justify-content-md-between align-items-center">
+                <p class="text-grey text-center text-md-left col-12 col-md-3 py-3">
+                    Подпишись на новости,
+                    чтобы вовремя узнать про
+                    скидки и акции!
+                </p>
+                <input type="text" class="py-3 br10 w-100 col-12 col-md-5 ml-lg-5 my-3 my-md-0"
+                       placeholder="Ваш e-mail">
+                <button class="btn btn-orange py-3 my-3 my-md-0 br2 col-12 col-md-3">Подписаться на новости</button>
+            </div>
+            <!--Подвал контакты-->
+            <div class="row d-inline d-md-flex justify-content-between align-items-center py-0 py-md-3">
+                <p class="text-white text-center font-weight-bold py-3 col-12 col-md-3">
+                    +7 (831) 4-100-900 <br> example@mail.ru
+                </p>
+                <p class="text-white text-center font-weight-bold py-3 d-flex justify-content-center col-12 col-md-6">
+                    Приём заказов ежедневно с 9:00 до 21:00
+                </p>
+                <div class="footer-social py-3 col-12 col-md-3 d-flex justify-content-center justify-content-md-end">
+                    <a href=""><img src="images/vk-icon.svg" alt="" class="mr-4"></a>
+                    <a href=""><img src="images/inst-icon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white">
+            <div class="container">
+                <div class="footer-policity row d-flex justify-content-center justify-content-md-between align-items-center">
+                    <a href="" class="text-dark fs18 p-2 py-lg-4">2020/Все права защищены</a>
+                    <a href="" class="text-dark fs18 p-2 py-lg-4">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Подвал. Конец.-->
+</div>
+<!--Мобильная навигация. Начало-->
+<nav id="my-menu">
+    <ul>
+        <li><a href="shares.html">Акции</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="about.html">О компани</a></li>
+        <li><a href="blog.html">Блог</a></li>
+    </ul>
+</nav>
+<!--Мобильная навигация. Конец-->
+<script src="js/app.min.js"></script>
 </body>
 </html>
+
